@@ -13,6 +13,9 @@ body {
     padding-top: 0px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+.link-container .row {
+    margin-bottom: 15px;
+}
 #masthead {
     min-height: 200px;
 }
@@ -73,6 +76,9 @@ body {
 #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10 {
     margin-top: 70px;
 }
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 20px;
+}
 h2 {
     font-family: 'Playfair Display', serif;
 }
@@ -84,7 +90,7 @@ h2 {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    background: #ccc;
+    background: #80d8ff;
 }
 .link-item a {
     height: 150px;
@@ -98,4 +104,15 @@ h2 {
 }
 .link-item h3 {
     margin-top: 0;
+}
+.link-item .link-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.link-item .link-description {
+    font-size: 12px;
+    color: #333;
+}
+#0 .link-item {
+    background-color: #ff0000;
 }
