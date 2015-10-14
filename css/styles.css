@@ -1,0 +1,101 @@
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+body {
+    padding-top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#masthead {
+    min-height: 200px;
+}
+#masthead img {
+    width: 100px;
+    height: auto;
+    margin-top: 50px;
+}
+#masthead h1 {
+    font-size: 90px;
+    line-height: 1;
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+#masthead .lead {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 10px;
+    margin-left: 570px;
+}
+#masthead .lead a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: underline;
+    color: #000;
+}
+#masthead .lead .fa {
+    color: red;
+    font-size: 16px;
+}
+.navbar-bright {
+    background-color: #111155;
+    color: #fff;
+}
+.affix-top, .affix {
+    position: static;
+}
+@media (min-width: 979px) {
+    #sidebar.affix-top {
+        position: static;
+        margin-top: 22px;
+        width: 150px;
+    }
+    #sidebar.affix {
+        position: fixed;
+        top: 40px;
+        width: 150px;
+    }
+}
+#sidebar li.active {
+    border: 0 red solid;
+    border-right-width: 5px;
+}
+
+.nav>li>a {
+    padding: 7px 15px;
+    color: #333;
+}
+
+#sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10 {
+    margin-top: 70px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+.col-md-3 {
+    padding-right: 0px;
+}
+.link-item {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background: #ccc;
+}
+.link-item a {
+    height: 150px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+}
+.link-item a:hover, .link-item a:focus {
+    text-decoration: none;
+}
+.link-item h3 {
+    margin-top: 0;
+}
