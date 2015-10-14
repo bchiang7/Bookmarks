@@ -12,12 +12,14 @@ author: bootply.com
 body {
     padding-top: 0px;
     font-family: 'Source Sans Pro', sans-serif;
-}
-.link-container .row {
-    margin-bottom: 15px;
+    background: #efefef;
 }
 #masthead {
     min-height: 200px;
+    margin-bottom: 25px;
+}
+#masthead .container {
+    padding: 0 30px;
 }
 #masthead img {
     width: 100px;
@@ -25,29 +27,59 @@ body {
     margin-top: 50px;
 }
 #masthead h1 {
-    font-size: 90px;
+    font-size: 100px;
     line-height: 1;
     padding-top: 20px;
     font-family: 'Playfair Display', serif;
-}
-#masthead .lead {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 10px;
-    margin-left: 570px;
-}
-#masthead .lead a {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: underline;
+    /*font-family: 'Abril Fatface', cursive;*/
     color: #000;
 }
-#masthead .lead .fa {
-    color: red;
-    font-size: 16px;
+#masthead h3 {
+    font-family: 'Playfair Display', serif;
+    color: #444;
+    /*margin-left: 520px;*/
 }
-.navbar-bright {
-    background-color: #111155;
-    color: #fff;
+#about-btn {
+    margin-top: 23px;
+    padding: 7px 10px;
+    color: #333;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
+.modal-content {
+    border-radius: 3px;
+}
+.modal-header {
+    padding: 20px;
+}
+.modal-header, .modal-footer {
+    border: none;
+}
+.modal-footer {
+    margin-top: 0;
+    padding: 0px 20px 20px;
+}
+.modal-footer button {
+    border-color: transparent;
+}
+.modal-footer button:hover {
+    border-color: transparent;
+    background: transparent;
+    color: #555;
+}
+.modal-body {
+    padding: 0 20px;
+}
+.modal-body p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
 .affix-top, .affix {
     position: static;
 }
@@ -72,6 +104,9 @@ body {
     padding: 7px 15px;
     color: #333;
 }
+.nav>li>a:hover {
+    background: #ccc;
+}
 
 #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10 {
     margin-top: 70px;
@@ -85,11 +120,15 @@ h2 {
 .col-md-3 {
     padding-right: 0px;
 }
+
+.link-container .row {
+    margin-bottom: 0px;
+}
 .link-item {
     height: 150px;
     overflow: hidden;
     position: relative;
-    margin: 0 auto;
+    margin: 7px auto;
     background: #80d8ff;
 }
 .link-item a {
@@ -115,4 +154,155 @@ h2 {
 }
 #0 .link-item {
     background-color: #ff0000;
+}
+
+
+
+
+
+/* ======= FOOTER ======= */
+
+footer {
+    color: #222;
+    background-color: #bbb;
+    padding-top: 0px;
+    margin-top: 75px;
+}
+footer h3 {
+    font-weight: 300;
+}
+ul.social-buttons {}
+ul.social-buttons li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    outline: 0;
+    color: rgba(255, 255, 255, 0.8);
+	background: #333;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+@media screen and (max-width: 480px) {
+    ul.social-buttons li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        outline: 0;
+        color: rgba(255, 255, 255, 0.8);
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+}
+@media screen and (max-width: 340px) {
+    ul.social-buttons li a {
+        width: 37px;
+        height: 37px;
+    }
+}
+ul.social-buttons li a:hover, ul.social-buttons li a:active {
+    color: #FFF;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.list-inline>li {
+    padding: 0px !important;
+}
+#facebook, #twitter, #instagram, #linkedin, #codepen, #github, #pinterest {
+    /*border: 1px solid #fff !important;*/
+}
+#facebook:hover {
+    background-color: #3B5998;
+}
+#twitter:hover {
+    background-color: #55ACEE;
+}
+#instagram:hover {
+    background-color: #517fa4;
+}
+#linkedin:hover {
+    background-color: #0077B5
+}
+#codepen:hover {
+    background-color: #fff;
+    color: #000;
+}
+#github:hover {
+    background-color: #4183C4;
+}
+#pinterest:hover {
+    background-color: #CC2127;
+}
+#to-top {
+    transition: all 0.5s;
+}
+#to-top:hover {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+#to-top img {
+	width: 50px;
+	padding: 5px;
+	margin: 10px auto 0px;
+}
+
+#to-top-copy {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	opacity: 0;
+}
+
+.copyright {
+    font-weight: 300;
+    color: #222;
+}
+.copyright p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    /*text-transform: uppercase;*/
+}
+.lead {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.lead a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: underline;
+    color: #000;
+}
+.lead .fa-heart {
+    color: red;
+    font-size: 16px;
+}
+.lead .fa-question-circle {
+    color: #333;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+	#to-top {
+		margin-top: 0px;
+	}
+	.copyright {
+	    padding-top: 0px;
+		margin-top: 0px;
+	}
+
 }
