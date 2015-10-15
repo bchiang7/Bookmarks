@@ -50,6 +50,9 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+#about-btn:focus {
+
+}
 .modal-content {
     border-radius: 3px;
 }
@@ -61,10 +64,12 @@ body {
 }
 .modal-footer {
     margin-top: 0;
-    padding: 0px 20px 20px;
+    padding: 0px 20px 15px;
 }
 .modal-footer button {
     border-color: transparent;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 .modal-footer button:hover {
     border-color: transparent;
@@ -95,14 +100,56 @@ body {
         width: 150px;
     }
 }
-#sidebar li.active {
-    border: 0 red solid;
+#sidebar li#li0.active {
+    border: 0 #ef5350 solid;
     border-right-width: 5px;
 }
+#sidebar li#li1.active {
+    border: 0 #ff6e40 solid;
+    border-right-width: 5px;
+}
+#sidebar li#li2.active {
+    border: 0 #fff59d solid;
+    border-right-width: 5px;
+}
+#sidebar li#li3.active {
+    border: 0 #c5e1a5 solid;
+    border-right-width: 5px;
+}
+#sidebar li#li4.active {
+    border: 0 #80cbc4 solid;
+    border-right-width: 5px;
+}
+#sidebar li#li5.active {
+    border: 0 #80deea solid;
+    border-right-width: 5px;
+}
+#sidebar li#li6.active {
+    border: 0 #29b6f6 solid;
+    border-right-width: 5px;
+}
+#sidebar li#li7.active {
+    border: 0 #7986cb solid;
+    border-right-width: 5px;
+}
+#sidebar li#li8.active {
+    border: 0 #b39ddb solid;
+    border-right-width: 5px;
+}
+#sidebar li#li9.active {
+    border: 0 #ba68c8 solid;
+    border-right-width: 5px;
+}
+#sidebar li#li10.active {
+    border: 0 #f48fb1 solid;
+    border-right-width: 5px;
+}
+
 
 .nav>li>a {
     padding: 7px 15px;
     color: #333;
+    font-size: 15px;
 }
 .nav>li>a:hover {
     background: #ccc;
@@ -137,6 +184,7 @@ h2 {
     position: relative;
     margin: 0 auto;
     padding: 15px;
+    color: #333;
 }
 .link-item a:hover, .link-item a:focus {
     text-decoration: none;
@@ -152,10 +200,72 @@ h2 {
     font-size: 12px;
     color: #333;
 }
-#0 .link-item {
-    background-color: #ff0000;
+#sec0 .link-item {
+    background-color: #ef5350;
 }
-
+#sec0 .link-item:hover {
+    background-color: #e57373;
+}
+#sec1 .link-item {
+    background-color: #ff8a65;
+}
+#sec1 .link-item:hover {
+    background-color: #ffab91;
+}
+#sec2 .link-item {
+    background-color: #fff176;
+}
+#sec2 .link-item:hover {
+    background-color: #fff59d;
+}
+#sec3 .link-item {
+    background-color: #81c784;
+}
+#sec3 .link-item:hover {
+    background-color: #a5d6a7;
+}
+#sec4 .link-item {
+    background-color: #80cbc4;
+}
+#sec4 .link-item:hover {
+    background-color: #b2dfdb;
+}
+#sec5 .link-item {
+    background-color: #80deea;
+}
+#sec5 .link-item:hover {
+    background-color: #b2ebf2;
+}
+#sec6 .link-item {
+    background-color: #29b6f6;
+}
+#sec6 .link-item:hover {
+    background-color: #4fc3f7;
+}
+#sec7 .link-item {
+    background-color: #7986cb;
+}
+#sec7 .link-item:hover {
+    background-color: #9fa8da;
+}
+#sec8 .link-item {
+    background-color: #b39ddb;
+}
+#sec8 .link-item:hover {
+    background-color: #d1c4e9;
+}
+#sec9 .link-item {
+    background-color: #ba68c8;
+}
+#sec9 .link-item:hover {
+    background-color: #ce93d8;
+}
+#sec10 .link-item {
+    background-color: #f48fb1;
+}
+#sec10 .link-item:hover {
+    background-color: #f8bbd0;
+}
 
 
 
@@ -164,7 +274,7 @@ h2 {
 
 footer {
     color: #222;
-    background-color: #bbb;
+    background-color: #ddd;
     padding-top: 0px;
     margin-top: 75px;
 }
@@ -289,7 +399,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:active {
 }
 .lead .fa-heart {
     color: red;
-    font-size: 16px;
+    font-size: 14px;
 }
 .lead .fa-question-circle {
     color: #333;
