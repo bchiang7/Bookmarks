@@ -1,18 +1,10 @@
-/*
-A Bootstrap 3.1 affix sidebar template
-from http://bootply.com
-
-This CSS code should follow the 'bootstrap.css'
-in your HTML file.
-
-license: MIT
-author: bootply.com
-*/
-
 body {
     padding-top: 0px;
     font-family: 'Source Sans Pro', sans-serif;
     background: #efefef;
+}
+.btn:focus {
+    outline: none !important;
 }
 #masthead {
     min-height: 200px;
@@ -40,18 +32,22 @@ body {
     /*margin-left: 520px;*/
 }
 #about-btn {
-    margin-top: 23px;
-    padding: 7px 10px;
+    padding: 5px 12px;
     color: #333;
     background: #ddd;
-    border: none;
-    border-radius: 3px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
+    border: 2px #ccc solid;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: 25px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
-#about-btn:focus {
-
+#about-btn:hover {
+    background: #ccc;
 }
 .modal-content {
     border-radius: 3px;
@@ -59,16 +55,22 @@ body {
 .modal-header {
     padding: 20px;
 }
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
 .modal-header, .modal-footer {
     border: none;
 }
 .modal-footer {
     margin-top: 0;
-    padding: 0px 20px 15px;
+    padding: 10px 20px 15px;
 }
 .modal-footer button {
     border-color: transparent;
+    /*font-family: 'Playfair Display', serif;*/
     font-size: 16px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .modal-footer button:hover {
@@ -92,16 +94,16 @@ body {
     #sidebar.affix-top {
         position: static;
         margin-top: 22px;
-        width: 150px;
+        width: 210px;
     }
     #sidebar.affix {
         position: fixed;
-        top: 40px;
-        width: 150px;
+        top: 25px;
+        width: 210px;
     }
 }
 #sidebar li#li0.active {
-    border: 0 #ef5350 solid;
+    border: 0 #ef7373 solid;
     border-right-width: 5px;
 }
 #sidebar li#li1.active {
@@ -144,18 +146,25 @@ body {
     border: 0 #f48fb1 solid;
     border-right-width: 5px;
 }
+#sidebar li#li11.active {
+    border: 0 #bdbdbd solid;
+    border-right-width: 5px;
+}
 
 
 .nav>li>a {
     padding: 7px 15px;
     color: #333;
     font-size: 15px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 .nav>li>a:hover {
     background: #ccc;
 }
 
-#sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10 {
+#sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9, #sec10, #sec11, #more {
     margin-top: 70px;
 }
 h1, h2, h3, h4, h5, h6{
@@ -176,7 +185,9 @@ h2 {
     overflow: hidden;
     position: relative;
     margin: 7px auto;
-    background: #80d8ff;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 .link-item a {
     height: 150px;
@@ -193,7 +204,7 @@ h2 {
     margin-top: 0;
 }
 .link-item .link-title {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 .link-item .link-description {
@@ -201,10 +212,10 @@ h2 {
     color: #333;
 }
 #sec0 .link-item {
-    background-color: #ef5350;
+    background-color: #ef7373;
 }
 #sec0 .link-item:hover {
-    background-color: #e57373;
+    background-color: #e59a9a;
 }
 #sec1 .link-item {
     background-color: #ff8a65;
@@ -266,7 +277,18 @@ h2 {
 #sec10 .link-item:hover {
     background-color: #f8bbd0;
 }
+#sec11 .link-item {
+    background-color: #bdbdbd;
+}
+#sec11 .link-item:hover {
+    background-color: #e0e0e0;
+}
 
+#more a {
+    color: #0047A3;
+    text-decoration: underline;
+    font-size: 16px;
+}
 
 
 
@@ -274,7 +296,7 @@ h2 {
 
 footer {
     color: #222;
-    background-color: #ddd;
+    background-color: #bbb;
     padding-top: 0px;
     margin-top: 75px;
 }
@@ -398,7 +420,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:active {
     color: #000;
 }
 .lead .fa-heart {
-    color: red;
+    color: #c62828;
     font-size: 14px;
 }
 .lead .fa-question-circle {
