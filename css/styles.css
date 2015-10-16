@@ -73,10 +73,11 @@ body {
     font-weight: 500;
     text-transform: uppercase;
 }
-.modal-footer button:hover {
+.modal-footer button:hover, .modal-footer button:focus, .modal-footer button:active {
     border-color: transparent;
     background: transparent;
     color: #555;
+    box-shadow: none;
 }
 .modal-body {
     padding: 0 20px;
