@@ -23,13 +23,35 @@ body {
     line-height: 1;
     padding-top: 20px;
     font-family: 'Playfair Display', serif;
-    /*font-family: 'Abril Fatface', cursive;*/
     color: #000;
+}
+@media screen and (max-width: 1100px) {
+    #masthead h1 {
+        font-size: 90px;
+    }
+}
+@media screen and (max-width: 990px) {
+    #masthead .container {
+        padding: 0;
+        margin: 0 auto;
+    }
+    #masthead h1 {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #masthead h1 {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #masthead h1 {
+        font-size: 60px;
+    }
 }
 #masthead h3 {
     font-family: 'Playfair Display', serif;
     color: #444;
-    /*margin-left: 520px;*/
 }
 #about-btn {
     padding: 5px 12px;
